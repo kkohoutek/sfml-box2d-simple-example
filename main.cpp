@@ -77,7 +77,7 @@ void render(sf::RenderWindow &w, std::vector<Box> &boxes)
 		rect.setPosition(box.body->GetPosition().x * PPM, WINDOW_HEIGHT - (box.body->GetPosition().y * PPM));
 
 		// We also need to set our drawable's origin to its center
-		// because in SFML, "position" refers to the bottom left corner
+		// because in SFML, "position" refers to the upper left corner
 		// while in Box2D, "position" refers to the body's center
 		rect.setOrigin(box.width / 2, box.height / 2);
 
