@@ -13,7 +13,7 @@
 b2World world(b2Vec2(0, -9));
 
 // A structure with all we need to render a box
-const struct Box
+struct Box
 {
 	float width;
 	float height;
